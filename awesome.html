@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .header { background: #232a36; color: #fff; padding: 32px 0 0 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 0 64px; }
+        .logo { font-weight: bold; font-size: 1.3em; }
+        .nav { display: flex; gap: 32px; }
+        .nav a { color: #fff; text-decoration: none; font-size: 1em; }
+        .main { background: #232a36; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 48px 64px; }
+        .main-title { max-width: 400px; }
+        .main-title h1 { font-size: 2.5em; margin-bottom: 0.3em; }
+        .main-title p { font-size: 1.1em; color: #bfc7d5; margin-bottom: 1.5em; }
+        .main-title .btn { background: #3882f6; color: #fff; border: none; padding: 12px 32px; border-radius: 8px; font-size: 1em; cursor: pointer; }
+        .main-image { background: #7d828b; color: #fff; width: 400px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; border-radius: 8px; }
+        .info { background: #fff; color: #232a36; padding: 48px 0; text-align: center; }
+        .info-title { font-size: 2em; font-weight: bold; margin-bottom: 32px; }
+        .info-cards { display: flex; justify-content: center; gap: 32px; }
+        .info-card { border: 2px solid #bfc7d5; border-radius: 12px; width: 160px; height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .info-card p { margin-top: 16px; font-size: 1em; color: #232a36; }
+        .quote { background: #e5e7eb; color: #232a36; padding: 48px 0; text-align: center; font-size: 1.3em; font-style: italic; }
+        .quote-author { margin-top: 16px; font-size: 1em; font-style: normal; font-weight: bold; }
+        .cta { background: #fff; padding: 48px 0; display: flex; justify-content: center; }
+        .cta-box { background: #3882f6; color: #fff; border-radius: 12px; padding: 32px 48px; display: flex; align-items: center; justify-content: space-between; width: 600px; }
+        .cta-text { font-size: 1.2em; font-weight: bold; }
+        .cta-btn { background: #fff; color: #3882f6; border: none; padding: 12px 32px; border-radius: 8px; font-size: 1em; cursor: pointer; margin-left: 32px; }
+        .footer { background: #232a36; color: #fff; text-align: center; padding: 24px 0; font-size: 1em; }
+        @media (max-width: 900px) {
+            .main, .header-content { flex-direction: column; align-items: flex-start; }
+            .main-image { width: 100%; margin-top: 24px; }
+            .info-cards { flex-direction: column; gap: 24px; }
+            .cta-box { flex-direction: column; gap: 16px; width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">Header Logo</div>
+            <nav class="nav">
+                <a href="#">header link one</a>
+                <a href="#">header link two</a>
+                <a href="#">header link three</a>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-title">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <button class="btn">Sign up</button>
+        </div>
+        <div class="main-image">this is a placeholder for an image</div>
+    </div>
+    <div class="info">
+        <div class="info-title">Some random information.</div>
+        <div class="info-cards">
+            <div class="info-card">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="info-card">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="info-card">
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+        </div>
+    </div>
+    <div class="quote">
+        <div>This is an inspiring quote, or a testimonial from a customer.  Maybe it's just filling up space, or maybe people will actually read it. Who knows?  All I know is that it looks nice.</div>
+        <div class="quote-author">-Thor, God of Thunder</div>
+    </div>
+    <div class="cta">
+        <div class="cta-box">
+            <div class="cta-text">Call to action! It's time!<br><span style="font-weight:normal;font-size:0.9em;">Sign up for our product by clicking that button right over there!</span></div>
+            <button class="cta-btn">Sign up</button>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © The Odin Project 2021
+    </div>
+</body>
+</html>
