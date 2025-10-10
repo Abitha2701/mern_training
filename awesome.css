@@ -1,0 +1,31 @@
+      body
+       { margin: 0; font-family: Arial, sans-serif; }
+        .header { background: #232a36; color: #fff; padding: 32px 0 0 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 0 64px; }
+        .logo { font-weight: bold; font-size: 1.3em; }
+        .nav { display: flex; gap: 32px; }
+        .nav a { color: #fff; text-decoration: none; font-size: 1em; }
+        .main { background: #232a36; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 48px 64px; }
+        .main-title { max-width: 400px; }
+        .main-title h1 { font-size: 2.5em; margin-bottom: 0.3em; }
+        .main-title p { font-size: 1.1em; color: #bfc7d5; margin-bottom: 1.5em; }
+        .main-title .btn { background: #3882f6; color: #fff; border: none; padding: 12px 32px; border-radius: 8px; font-size: 1em; cursor: pointer; }
+        .main-image { background: #7d828b; color: #fff; width: 400px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; border-radius: 8px; }
+        .info { background: #fff; color: #232a36; padding: 48px 0; text-align: center; }
+        .info-title { font-size: 2em; font-weight: bold; margin-bottom: 32px; }
+        .info-cards { display: flex; justify-content: center; gap: 32px; }
+        .info-card { border: 2px solid #bfc7d5; border-radius: 12px; width: 160px; height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .info-card p { margin-top: 16px; font-size: 1em; color: #232a36; }
+        .quote { background: #e5e7eb; color: #232a36; padding: 48px 0; text-align: center; font-size: 1.3em; font-style: italic; }
+        .quote-author { margin-top: 16px; font-size: 1em; font-style: normal; font-weight: bold; }
+        .cta { background: #fff; padding: 48px 0; display: flex; justify-content: center; }
+        .cta-box { background: #3882f6; color: #fff; border-radius: 12px; padding: 32px 48px; display: flex; align-items: center; justify-content: space-between; width: 600px; }
+        .cta-text { font-size: 1.2em; font-weight: bold; }
+        .cta-btn { background: #fff; color: #3882f6; border: none; padding: 12px 32px; border-radius: 8px; font-size: 1em; cursor: pointer; margin-left: 32px; }
+        .footer { background: #232a36; color: #fff; text-align: center; padding: 24px 0; font-size: 1em; }
+        @media (max-width: 900px) {
+            .main, .header-content { flex-direction: column; align-items: flex-start; }
+            .main-image { width: 100%; margin-top: 24px; }
+            .info-cards { flex-direction: column; gap: 24px; }
+            .cta-box { flex-direction: column; gap: 16px; width: 90%; }
+        }

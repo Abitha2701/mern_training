@@ -1,0 +1,44 @@
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
+.container div{
+   
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+margin: 5px;
+border-radius: 1rem;
+}
+.container .one{
+    grid-column-start:1;
+    grid-column-end:6;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container .two{
+    grid-row: span 2;
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* to make the content inside box centerly aligned */
+ 
+}
+.container .three{
+    grid-column: span 4;
+}
+.container .four{
+    grid-column: span 2;
+}
+.container .five{
+    grid-column: span 2;
+    
+}
+.container .six{
+    grid-column: span 5;
+}
