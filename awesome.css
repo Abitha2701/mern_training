@@ -3,8 +3,8 @@
         .header { background: #232a36; color: #fff; padding: 32px 0 0 0; }
         .header-content { display: flex; justify-content: space-between; align-items: center; padding: 0 64px; }
         .logo { font-weight: bold; font-size: 1.3em; }
-        .nav { display: flex; gap: 32px; }
-        .nav a { color: #fff; text-decoration: none; font-size: 1em; }
+        .nav { display: flex; gap: 32px;list-style-type:none; }
+        .nav a { color: #fff; text-decoration: none; font-size: 1em; text-decoration: none;}
         .main { background: #232a36; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 48px 64px; }
         .main-title { max-width: 400px; }
         .main-title h1 { font-size: 2.5em; margin-bottom: 0.3em; }

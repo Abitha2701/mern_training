@@ -3,6 +3,33 @@
     display: grid;
     grid-template-columns: auto;
 }
+
+/* Navbar Styles */
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    background: #1976d2;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.15);
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-list li a:hover, .nav-list li a.active {
+    background: #1565c0;
+    color: #fff;
+    box-shadow: 0 0 8px #1976d2;
+}
 .container div{
    
     background-color: lightblue;
